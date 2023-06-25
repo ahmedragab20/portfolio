@@ -1,6 +1,6 @@
 <template>
   <div v-if="loaded" id="ragab-app">
-    <div class="min-h-[80svh] flex flex-col justify-center w-full p-5 sm:max-w-lg mx-auto">
+    <div class="min-h-[80svh] flex flex-col justify-center w-full p-5 sm:max-w-xl mx-auto">
       <div>
         <div
           dir="rtl"
@@ -19,11 +19,14 @@
       <!-- bio -->
       <div class="my-10 font-mono">
         <h2>Hi, I'm <span class="font-bold text-primary-500">Ragab</span> 👋🏻</h2>
-        <p>listen, life is too short to code a fantasy portfolio...</p>
-        <p>
-          therefore, here's my github and my linkedin. you'll find all you wanna know about me
-          there😄
-        </p>
+        <div class="text-gray-500 dark:text-gray-400">
+          <p>listen, life is too short to code a fantasy portfolio...</p>
+          <p>
+            therefore, here're my github and linkedin accounts. you'll find all you wanna know about
+            me there.
+          </p>
+          <p>no need to repeat everything again here😄</p>
+        </div>
         <div>
           <span>
             <i class="text-xs bg-gray-100 p-0.5 rounded-md dark:bg-gray-800">life is short, man!</i>
