@@ -1,2 +1,2 @@
 # portfolio
-life is too short for fantasy portfolio, man
+life is too short for a fantasy portfolio, man
