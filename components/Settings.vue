@@ -126,7 +126,7 @@
           />
         </div>
         <div class="flex items-center">
-          <UTooltip class="hidden md:flex" text="Remember the changes">
+          <UTooltip class="hidden md:flex" text="Remember changes">
             <UToggle
               v-model="rememberChanges"
               icon-on="i-heroicons-check-20-solid"
@@ -135,7 +135,7 @@
           </UTooltip>
 
           <div class="flex items-center gap-1 md:hidden">
-            <p class="text-sm">Remember the changes:</p>
+            <p class="text-xs whitespace-nowrap">Remember changes:</p>
             <UToggle
               v-model="rememberChanges"
               icon-on="i-heroicons-check-20-solid"
