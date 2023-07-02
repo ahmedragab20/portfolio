@@ -28,7 +28,9 @@
         </div>
         <div>
           <span>
-            <i class="text-xs bg-gray-100 p-0.5 rounded-md dark:bg-gray-800">life is short, man!</i>
+            <i class="text-xs bg-gray-100 p-0.5 rounded-md dark:bg-gray-800"
+              >#life is short, man!</i
+            >
           </span>
         </div>
         <div class="flex gap-1 mt-2">
