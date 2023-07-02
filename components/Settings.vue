@@ -109,6 +109,19 @@
               <div class="w-8 h-8" />
             </template>
           </ClientOnly>
+          <ClientOnly>
+            <UButton
+              icon="i-heroicons-book-open"
+              :color="isModeBtnActive('sepia') ? appConfig.ui.primary : 'gray'"
+              variant="ghost"
+              aria-label="Theme"
+              @click="changeAppTheme('sepia')"
+            />
+
+            <template #fallback>
+              <div class="w-8 h-8" />
+            </template>
+          </ClientOnly>
         </div>
       </div>
     </div>
