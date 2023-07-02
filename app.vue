@@ -25,7 +25,6 @@
             therefore, here're my github and linkedin accounts. you'll find all you wanna know about
             me there.
           </p>
-          <p>no need to repeat everything again here😄</p>
         </div>
         <div>
           <span>
