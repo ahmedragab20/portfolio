@@ -121,6 +121,7 @@
         <div class="flex flex-wrap gap-1">
           <UButton
             @click="downloadResumePDF"
+            class="select-none"
             size="sm"
             color="black"
             target="_blank"
@@ -134,6 +135,7 @@
           </UButton>
           <UButton
             :to="links.googleDrive"
+            class="select-none"
             size="sm"
             color="green"
             target="_blank"
@@ -146,6 +148,7 @@
           </UButton>
           <UButton
             :to="links.dropbox"
+            class="select-none"
             size="sm"
             color="blue"
             target="_blank"
@@ -203,7 +206,7 @@
   const links = {
     github: 'https://github.com/ahmedragab20',
     linkedin: 'https://www.linkedin.com/in/ahmed-ragab-bb75541b3/',
-    resume: './assets/Ahmed_Ragab.pdf',
+    resume: '/Ahmed_Ragab.pdf',
     googleDrive:
       'https://drive.google.com/file/d/1xmJiQ14tibiUJR1QHxj1svq2yREzBGfI/view?usp=drive_link',
     dropbox:
