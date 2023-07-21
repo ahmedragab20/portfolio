@@ -21,10 +21,7 @@
         <h2>Hi, I'm <span class="font-bold text-primary-500">Ragab</span> 👋🏻</h2>
         <div class="text-gray-500 dark:text-gray-400">
           <p>listen, life is too short to code a fantasy portfolio...</p>
-          <p>
-            therefore, here're my github and linkedin accounts. you'll find all you wanna know about
-            me there.
-          </p>
+          <p>therefore, here's all you might need to know about me.</p>
         </div>
         <div>
           <span>
@@ -34,11 +31,25 @@
           </span>
         </div>
         <div class="flex gap-1 mt-2">
+          <UTooltip text="Google Dive - Dropbox - Download" :shortcuts="[metaSymbol, 'r']">
+            <UButton
+              @click="resumeToggler"
+              size="sm"
+              color="black"
+              target="_blank"
+              icon="i-heroicons-document"
+              :ui="{
+                rounded: 'rounded-full',
+              }"
+            >
+              Resume
+            </UButton>
+          </UTooltip>
           <UButton
-            to="https://github.com/ahmedragab20"
-            color="black"
+            :to="links.github"
             target="_blank"
             size="sm"
+            variant="outline"
             :ui="{
               rounded: 'rounded-full',
             }"
@@ -46,9 +57,10 @@
             Github
           </UButton>
           <UButton
-            to="https://www.linkedin.com/in/ahmed-ragab-bb75541b3/"
+            :to="links.linkedin"
             size="sm"
             target="_blank"
+            variant="outline"
             :ui="{
               rounded: 'rounded-full',
             }"
@@ -87,6 +99,69 @@
 
   <!-- 🤷🏻‍♂️ - so global -->
   <!-- Modals -->
+  <!-- Resume -->
+  <UModal v-model="resumeModal" name="resumeModal">
+    <UCard>
+      <template #header>
+        <h2 class="text-2xl font-semibold">Resume</h2>
+      </template>
+
+      <h3 class="font-bold">here you go 👋🏻</h3>
+      <div class="text-gray-700 dark:text-gray-400">
+        <p class="my-1">
+          the resume will include all the information you may need to know about me. from my first
+          job to my last one, and all the skills i've learned along the way.
+        </p>
+        <p class="text-gray-900 dark:text-gray-100">
+          and before you go, <strong>thank you ❤️</strong>
+        </p>
+      </div>
+
+      <template #footer>
+        <div class="flex flex-wrap gap-1">
+          <UButton
+            @click="downloadResumePDF"
+            size="sm"
+            color="black"
+            target="_blank"
+            icon="i-heroicons-document-arrow-down"
+            :loading="downloadingResume"
+            :ui="{
+              rounded: 'rounded-full',
+            }"
+          >
+            Download
+          </UButton>
+          <UButton
+            :to="links.googleDrive"
+            size="sm"
+            color="green"
+            target="_blank"
+            variant="outline"
+            :ui="{
+              rounded: 'rounded-full',
+            }"
+          >
+            Drive
+          </UButton>
+          <UButton
+            :to="links.dropbox"
+            size="sm"
+            color="blue"
+            target="_blank"
+            variant="outline"
+            :ui="{
+              rounded: 'rounded-full',
+            }"
+          >
+            Dropbox
+          </UButton>
+        </div>
+      </template>
+    </UCard>
+  </UModal>
+
+  <!-- settings -->
   <UModal v-model="settingsModal" name="settingsModal">
     <Settings @close="onSettingsClose" />
   </UModal>
@@ -125,6 +200,34 @@
     }
   };
 
+  const links = {
+    github: 'https://github.com/ahmedragab20',
+    linkedin: 'https://www.linkedin.com/in/ahmed-ragab-bb75541b3/',
+    resume: './assets/Ahmed_Ragab.pdf',
+    googleDrive:
+      'https://drive.google.com/file/d/1xmJiQ14tibiUJR1QHxj1svq2yREzBGfI/view?usp=drive_link',
+    dropbox:
+      'https://www.dropbox.com/scl/fi/jk2xhl6sb9atv9runorw2/kickresume-Ahmed-Ragab.pdf?rlkey=yhdgsm92cs0rhhcr7dtg9xoye&dl=0',
+  };
+
+  const resumeModal = ref(false);
+  const resumeToggler = () => {
+    resumeModal.value = !resumeModal.value;
+  };
+  const downloadingResume = ref(false);
+
+  const downloadResumePDF = () => {
+    downloadingResume.value = true;
+    const link = document.createElement('a');
+    link.href = links.resume;
+    link.download = "Ahmed Ragab's Resume";
+
+    setTimeout(() => {
+      link.click();
+      downloadingResume.value = false;
+    }, 1000);
+  };
+
   onMounted(() => {
     initTheme();
     nextTick(() => {
@@ -157,6 +260,10 @@
     'meta_.': {
       usingInput: true,
       handler: () => settingsToggler(),
+    },
+    meta_r: {
+      usingInput: true,
+      handler: () => resumeToggler(),
     },
   });
 
