@@ -20,7 +20,7 @@
       <div class="my-10 font-mono">
         <h2>Hi, I'm <span class="font-bold text-primary-500">Ragab</span> 👋🏻</h2>
         <div class="text-gray-500 dark:text-gray-400">
-          <p>listen, life is too short to code a fantasy portfolio...</p>
+          <p>listen, life is too short to code a fancy portfolio...</p>
           <p>therefore, here's all you might need to know about me.</p>
         </div>
         <div>
