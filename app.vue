@@ -110,10 +110,7 @@
       <div class="text-gray-700 dark:text-gray-400">
         <p class="my-1">
           the resume will include all the information you may need to know about me. from my first
-          job to my last one, and all the skills i've learned along the way.
-        </p>
-        <p class="text-gray-900 dark:text-gray-100">
-          and before you go, <strong>thank you ❤️</strong>
+          job to my last one, and most of the skills i've learned along the way.
         </p>
       </div>
 
