@@ -10,9 +10,9 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxthq/ui": "^2.4.1",
-    "@types/node": "^18",
-    "nuxt": "^3.6.0",
+    "@nuxt/ui": "^2.15.2",
+    "@types/node": "^20.12.8",
+    "nuxt": "^3.11.2",
     "typescript": "latest"
   }
 }
