@@ -1,0 +1,68 @@
+{
+  "technologies": [
+    {
+      "name": "TypeScript",
+      "icon": "i-simple-icons:typescript"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "i-simple-icons:javascript"
+    },
+    {
+      "name": "Vue",
+      "icon": "i-simple-icons:vuedotjs"
+    },
+    {
+      "name": "Nuxt",
+      "icon": "i-simple-icons:nuxtdotjs"
+    },
+    {
+      "name": "React",
+      "icon": "i-simple-icons:react"
+    },
+    {
+      "name": "Next",
+      "icon": "i-simple-icons:nextdotjs"
+    },
+    {
+      "name": "Node",
+      "icon": "i-simple-icons:nodedotjs"
+    },
+    {
+      "name": "Express",
+      "icon": "i-simple-icons:express"
+    },
+    {
+      "name": "Nitro",
+      "icon": "i-file-icons:firebase-bolt"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "i-simple-icons:postgresql"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "i-simple-icons:mongodb"
+    },
+    {
+      "name": "Cloud firestore",
+      "icon": "i-simple-icons:firebase"
+    },
+    {
+      "name": "Directus",
+      "icon": "i-simple-icons:directus"
+    },
+    {
+      "name": "Docker",
+      "icon": "i-simple-icons:docker"
+    },
+    {
+      "name": "Jest",
+      "icon": "i-simple-icons:jest"
+    },
+    {
+      "name": "Git",
+      "icon": "i-simple-icons:git"
+    }
+  ]
+}

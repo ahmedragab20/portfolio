@@ -3,7 +3,7 @@
     <Head>
       <Title> AR | Portfolio </Title>
     </Head>
-    <Body>
+    <Body class="font-red-hat-mono">
       <NuxtLayout>
         <NuxtPage />
 

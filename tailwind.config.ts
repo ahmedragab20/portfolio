@@ -37,7 +37,7 @@ export default <Partial<Config>>{
         },
       },
       fontFamily: {
-        roboto: "Roboto",
+        "red-hat-mono": ["Red Hat Mono", "monospace"],
       },
     },
   },
