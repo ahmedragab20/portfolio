@@ -73,7 +73,7 @@
       </div>
       <div class="mt-3 space-y-3">
         <a
-          href="https://github.com/ahmedragab20/kalemah"
+          href="https://github.com/ahmedragab20/very-good-fetch"
           class="py-3 px-5 border block hover:bg-gray-100 dark:hover:bg-gray-800 dark:border-gray-700"
           target="_blank"
         >
