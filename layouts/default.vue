@@ -1,12 +1,12 @@
 <template>
-  <main class="pb-20">
+  <main class="pb-24">
     <slot />
   </main>
   <footer
     class="fixed bottom-0 w-full h-20 border-t backdrop-blur-lg dark:border-gray-800 dark:bg-gray-900/50"
   >
     <div
-      class="sm:px-0 sm:w-[80%] md:w-[60%] lg:w-[50%] xl:w-[40%] mx-auto h-full flex items-center justify-between"
+      class="sm:px-0 px-5 sm:w-[80%] md:w-[60%] lg:w-[50%] xl:w-[40%] mx-auto h-full flex items-center justify-between"
     >
       <ThemeSwitch />
       <div class="flex items-center gap-3">
