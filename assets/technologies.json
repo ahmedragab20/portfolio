@@ -49,6 +49,10 @@
       "icon": "i-simple-icons:firebase"
     },
     {
+      "name": "GraphQL",
+      "icon": "i-simple-icons:graphql"
+    },
+    {
       "name": "Directus",
       "icon": "i-simple-icons:directus"
     },
