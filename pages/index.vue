@@ -14,7 +14,6 @@
       <h1 class="text-lg mt-2">
         this is
         <span class="text-primary-400">Ahmed Ragab</span>
-        . he's nice guy!
       </h1>
       <div
         class="mt-2 text-gray-500 dark:text-gray-400 sm:max-w-4xl sm:text-sm text-xs space-y-1.5"
