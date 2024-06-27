@@ -9,6 +9,10 @@
       "icon": "i-simple-icons:javascript"
     },
     {
+      "name": "Rust",
+      "icon": "i-simple-icons:rust"
+    },
+    {
       "name": "Vue",
       "icon": "i-simple-icons:vuedotjs"
     },
