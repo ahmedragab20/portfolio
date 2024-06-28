@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   ssr: false,
   modules: ["@nuxt/ui", "@nuxtjs/google-fonts"],
+  nitro: {
+    prerender: {
+      routes: ["/"]
+    }
+  },
   devtools: { enabled: true },
   googleFonts: {
     families: {
